@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Twitter, Facebook, Instagram, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from '../../assets/images/logoapanines.svg';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,7 +27,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Logo
+            <img src={logo} alt="Logo" className="h-12" />
           </motion.a>
 
           <div className="hidden md:flex space-x-8">
