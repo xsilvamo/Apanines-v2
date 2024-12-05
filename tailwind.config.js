@@ -6,7 +6,7 @@ export default {
       colors: {
         'azul': '#003366',
         'celeste': '#0072C6',
-        'plomo': '#CCDCEB',
+        'gris': '#CCDCEB',
         'blanco': '#FFFFFF',
       },
     },
