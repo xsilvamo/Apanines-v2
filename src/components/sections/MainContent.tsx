@@ -27,12 +27,12 @@ const MainContent = () => {
           >
             <div>
               <h2 className="text-3xl font-bold mb-6">Descubre el porqué marcamos la diferencia</h2>
-              <p className="text-gray-600 mb-8 text-lg">
+              <p className="text-celeste mb-8 text-lg">
                 En Apanines, creemos que cada niño merece la oportunidad de alcanzar su máximo potencial.
                 Nuestro enfoque integral y personalizado marca la diferencia en la vida de las familias.
               </p>
               <motion.button
-                className="bg-blue-600 text-white px-8 py-3 rounded-full text-lg hover:bg-blue-700 transition-colors"
+                className="bg-celeste text-white px-8 py-3 rounded-full text-lg hover:bg-azul transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -58,7 +58,7 @@ const MainContent = () => {
 
       {/* Counter Section */}
       <motion.section 
-        className="py-20 bg-blue-600 text-white"
+        className="py-20 bg-celeste text-white"
         variants={fadeInUp}
         initial="initial"
         whileInView="whileInView"
