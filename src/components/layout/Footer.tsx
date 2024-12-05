@@ -1,6 +1,7 @@
 import React from 'react';
 import { Twitter, Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
+import logo from '../../assets/images/logoapanines.svg';
 
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
               className="text-2xl font-bold mb-6"
               whileHover={{ scale: 1.05 }}
             >
-              Logo
+              <img src={logo} alt="Logo" className="h-12 "/>
             </motion.div>
             <p className="text-gray-400 mb-6">
               Transformando vidas a través del apoyo integral y el amor incondicional.
