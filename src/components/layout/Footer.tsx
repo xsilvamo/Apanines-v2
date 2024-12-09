@@ -13,7 +13,7 @@ const Footer = () => {
               className="text-2xl font-bold mb-6"
               whileHover={{ scale: 1.05 }}
             >
-              <img src={logo} alt="Logo" className="h-12 "/>
+              <img src={logo} alt="Logo" className="h-12" />
             </motion.div>
             <p className="text-gray-400 mb-6">
               Transformando vidas a través del apoyo integral y el amor incondicional.
