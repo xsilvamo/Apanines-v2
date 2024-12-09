@@ -17,13 +17,13 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
+      isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-2'
     }`}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-center">
           <motion.a 
             href="/" 
-            className="text-2xl font-bold text-blue-600"
+            className="text-2xl font-bold text-azul"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -35,7 +35,7 @@ const Navbar = () => {
               <motion.a
                 key={item}
                 href="#"
-                className="text-gray-700 hover:text-blue-600 transition-colors"
+                className="text-celeste hover:text-azul transition-colors"
                 whileHover={{ y: -2 }}
                 whileTap={{ y: 0 }}
               >
@@ -51,14 +51,14 @@ const Navbar = () => {
                   key={index}
                   href="#"
                   whileHover={{ y: -2, color: '#2563eb' }}
-                  className="text-gray-600 hover:text-blue-600 transition-colors"
+                  className="text-gray-600 hover:text-azul transition-colors"
                 >
                   <Icon className="w-5 h-5" />
                 </motion.a>
               ))}
             </div>
             <motion.button
-              className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors"
+              className="bg-celeste text-white px-6 py-2 rounded-full hover:bg-azul transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -88,12 +88,12 @@ const Navbar = () => {
                 <a
                   key={item}
                   href="#"
-                  className="block text-gray-700 hover:text-blue-600 transition-colors"
+                  className="block text-gray-700 hover:text-azul transition-colors"
                 >
                   {item}
                 </a>
               ))}
-              <button className="w-full bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">
+              <button className="w-full bg-azul text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">
                 Donar
               </button>
             </div>
