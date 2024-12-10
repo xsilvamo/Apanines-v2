@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState, useEffect } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
-  'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80',
-  'https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&q=80',
-  'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&q=80'
+  "./Public/IMG-20241115-WA0014.jpg",
+  "./Public/IMG-20241115-WA0017.jpg",
 ];
 
 const Hero = () => {
@@ -28,7 +27,7 @@ const Hero = () => {
 
   return (
     <section className="relative h-screen">
-      <AnimatePresence mode='wait'>
+      <AnimatePresence mode="wait">
         <motion.div
           key={currentImage}
           initial={{ opacity: 0 }}
@@ -54,7 +53,8 @@ const Hero = () => {
                   Juntos Cambiamos Vidas
                 </h1>
                 <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-                  Ofrecemos apoyo integral para las familias en situación de discapacidad
+                  Ofrecemos apoyo integral para las familias en situación de
+                  discapacidad
                 </p>
                 <motion.button
                   whileHover={{ scale: 1.05 }}
@@ -92,7 +92,7 @@ const Hero = () => {
           <motion.button
             key={index}
             className={`w-2 h-2 rounded-full ${
-              currentImage === index ? 'bg-white' : 'bg-white/50'
+              currentImage === index ? "bg-white" : "bg-white/50"
             }`}
             whileHover={{ scale: 1.2 }}
             onClick={() => setCurrentImage(index)}
