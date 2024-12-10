@@ -1,13 +1,12 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/layout/Navbar';
-import Footer from './components/layout/Footer';
-import Home from './pages/Home';
-import OurCause from './pages/OurCause';
-import WhatWeDo from './pages/WhatWeDo';
-import HowToHelp from './pages/HowToHelp';
-import News from './pages/News';
-import Gallery from './pages/Gallery';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+import Home from "./pages/Home";
+import OurCause from "./pages/OurCause";
+import WhatWeDo from "./pages/WhatWeDo";
+import HowToHelp from "./pages/HowToHelp";
+import News from "./pages/News";
+import Gallery from "./pages/Gallery";
 
 function App() {
   return (
