@@ -1,24 +1,24 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import Mission from './Mission';
-import Testimonials from './Testimonials';
+import React from "react";
+import { motion } from "framer-motion";
+import Mission from "./Mission";
+import Testimonials from "./Testimonials";
 
 const fadeInUp = {
   initial: { y: 20, opacity: 0 },
   whileInView: { y: 0, opacity: 1 },
   viewport: { once: true },
-  transition: { duration: 0.5 }
+  transition: { duration: 0.5 },
 };
 
 const MainContent = () => {
   return (
     <div className="w-full">
       <Mission />
-      
+
       {/* About Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <motion.div 
+          <motion.div
             className="grid md:grid-cols-2 gap-12 items-center"
             variants={fadeInUp}
             initial="initial"
@@ -26,10 +26,13 @@ const MainContent = () => {
             viewport={{ once: true }}
           >
             <div>
-              <h2 className="text-3xl font-bold mb-6">Descubre el porqué marcamos la diferencia</h2>
+              <h2 className="text-3xl font-bold mb-6">
+                Descubre el porqué marcamos la diferencia
+              </h2>
               <p className="text-celeste mb-8 text-lg">
-                En Apanines, creemos que cada niño merece la oportunidad de alcanzar su máximo potencial.
-                Nuestro enfoque integral y personalizado marca la diferencia en la vida de las familias.
+                En Apanines, creemos que cada niño merece la oportunidad de
+                alcanzar su máximo potencial. Nuestro enfoque integral y
+                personalizado marca la diferencia en la vida de las familias.
               </p>
               <motion.button
                 className="bg-celeste text-white px-8 py-3 rounded-full text-lg hover:bg-azul transition-colors"
@@ -45,9 +48,9 @@ const MainContent = () => {
               transition={{ duration: 0.3 }}
             >
               <img
-                src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&q=80"
+                src="Public\IMG-20241115-WA0008.jpg"
                 alt="Niños jugando"
-                className="w-full h-full object-cover"
+                className=" object-cover"
               />
             </motion.div>
           </motion.div>
@@ -57,7 +60,7 @@ const MainContent = () => {
       <Testimonials />
 
       {/* Counter Section */}
-      <motion.section 
+      <motion.section
         className="py-20 bg-celeste text-white"
         variants={fadeInUp}
         initial="initial"
