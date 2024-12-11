@@ -8,6 +8,6 @@
         "destination": "/index.html"
       }
     ],
-    "predeploy": ["npm install", "npm run build"]
+    "predeploy": ["npm run build"]
   }
 }
