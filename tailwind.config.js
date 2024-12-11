@@ -4,10 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        'azul': '#003366',
-        'celeste': '#0072C6',
-        'gris': '#CCDCEB',
+        'amarillo': '#F8E71C',
+        'celeste': '#4A90E2',
+        'gris': '#F5F5F5',
         'blanco': '#FFFFFF',
+        'verde': '#4EA641',
       },
     },
   },
