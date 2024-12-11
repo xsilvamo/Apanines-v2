@@ -8,25 +8,40 @@ import WhatWeDo from './pages/WhatWeDo';
 import HowToHelp from './pages/HowToHelp';
 import News from './pages/News';
 import Gallery from './pages/Gallery';
+import AdminNews from './pages/admin/AdminNews';
+import LoginForm from './components/auth/LoginForm';
+import ProtectedRoute from './components/auth/ProtectedRoute';
+import { AuthProvider } from './contexts/AuthContext';
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen flex flex-col">
-        <Navbar />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/nuestra-causa" element={<OurCause />} />
-            <Route path="/que-hacemos" element={<WhatWeDo />} />
-            <Route path="/como-ayudar" element={<HowToHelp />} />
-            <Route path="/noticias" element={<News />} />
-            <Route path="/galeria" element={<Gallery />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <AuthProvider>
+      <Router>
+        <div className="min-h-screen flex flex-col">
+          <Navbar />
+          <main className="flex-grow">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/nuestra-causa" element={<OurCause />} />
+              <Route path="/que-hacemos" element={<WhatWeDo />} />
+              <Route path="/como-ayudar" element={<HowToHelp />} />
+              <Route path="/noticias/*" element={<News />} />
+              <Route path="/galeria" element={<Gallery />} />
+              <Route path="/admin/login" element={<LoginForm />} />
+              <Route
+                path="/admin/noticias"
+                element={
+                  <ProtectedRoute>
+                    <AdminNews />
+                  </ProtectedRoute>
+                }
+              />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
+      </Router>
+    </AuthProvider>
   );
 }
 
