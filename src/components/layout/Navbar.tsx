@@ -49,7 +49,7 @@ const Navbar = () => {
               >
                 <Link
                   to={item.path}
-                  className={`text-gray-700 hover:text-blue-600 transition-colors ${
+                  className={`text-gray-700 hover:text-celeste transition-colors ${
                     location.pathname === item.path ? 'text-blue-600 font-semibold' : ''
                   }`}
                 >
