@@ -42,7 +42,7 @@ const WhatWeDo = () => {
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="relative h-[60vh] bg-gradient-to-r from-purple-600 to-blue-600"
+        className="relative h-[60vh] bg-gradient-to-r from-verde to-celeste"
       >
         <div className="h-full flex items-center justify-center">
           <div className="text-center text-white px-4">
@@ -80,8 +80,8 @@ const WhatWeDo = () => {
                 whileHover={{ y: -10 }}
                 className="bg-white p-6 rounded-lg shadow-lg"
               >
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                  <service.icon className="w-6 h-6 text-blue-600" />
+                <div className="w-12 h-12 bg-gren-200 rounded-full flex items-center justify-center mb-6">
+                  <service.icon className="w-6 h-6 text-verde" />
                 </div>
                 <h3 className="text-xl font-semibold mb-4">{service.title}</h3>
                 <p className="text-gray-600">{service.description}</p>

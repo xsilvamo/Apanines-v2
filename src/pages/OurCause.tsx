@@ -11,7 +11,7 @@ const OurCause = () => {
         animate={{ opacity: 1 }}
         className="relative h-[60vh] bg-blue-600"
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800">
+        <div className="absolute inset-0 bg-gradient-to-r from-celeste to-blue-800">
           <div className="h-full flex items-center justify-center">
             <div className="text-center text-white px-4">
               <motion.h1
@@ -46,7 +46,7 @@ const OurCause = () => {
               className="text-center"
             >
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Heart className="w-8 h-8 text-blue-600" />
+                <Heart className="w-8 h-8 text-celeste" />
               </div>
               <h3 className="text-xl font-semibold mb-4">Nuestra Misión</h3>
               <p className="text-gray-600">
@@ -62,7 +62,7 @@ const OurCause = () => {
               className="text-center"
             >
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Target className="w-8 h-8 text-blue-600" />
+                <Target className="w-8 h-8 text-celeste" />
               </div>
               <h3 className="text-xl font-semibold mb-4">Nuestra Visión</h3>
               <p className="text-gray-600">
@@ -78,7 +78,7 @@ const OurCause = () => {
               className="text-center"
             >
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="w-8 h-8 text-blue-600" />
+                <Users className="w-8 h-8 text-celeste" />
               </div>
               <h3 className="text-xl font-semibold mb-4">Nuestros Valores</h3>
               <p className="text-gray-600">
@@ -120,7 +120,7 @@ const OurCause = () => {
                 transition={{ delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-4xl font-bold text-blue-600 mb-2">{stat.number}</div>
+                <div className="text-4xl font-bold text-verde mb-2">{stat.number}</div>
                 <p className="text-gray-600">{stat.text}</p>
               </motion.div>
             ))}

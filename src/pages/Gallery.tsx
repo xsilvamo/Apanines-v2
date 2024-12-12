@@ -38,7 +38,7 @@ const Gallery = () => {
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="relative h-[40vh] bg-gradient-to-r from-purple-600 to-pink-600"
+        className="relative h-[60vh] bg-gradient-to-r from-purple-600 to-pink-600"
       >
         <div className="h-full flex items-center justify-center">
           <div className="text-center text-white px-4">

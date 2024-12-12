@@ -29,7 +29,7 @@ const MainContent = () => {
               <h2 className="text-3xl font-bold mb-6">
                 Descubre el porqué marcamos la diferencia
               </h2>
-              <p className="text-celeste mb-8 text-lg">
+              <p className="text-black mb-8 text-lg">
                 En Apanines, creemos que cada niño merece la oportunidad de
                 alcanzar su máximo potencial. Nuestro enfoque integral y
                 personalizado marca la diferencia en la vida de las familias.
