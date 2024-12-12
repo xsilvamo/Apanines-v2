@@ -103,7 +103,7 @@ const HowToHelp = () => {
                     key={index}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="py-3 px-6 border-2 border-verde rounded-full hover:bg-blue-600 hover:text-white transition-colors"
+                    className="py-3 px-6 border-2 border-verde rounded-full hover:bg-green-600 hover:text-white transition-colors"
                   >
                     {amount}
                   </motion.button>
