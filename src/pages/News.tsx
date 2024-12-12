@@ -22,7 +22,7 @@ const NewsPage: React.FC = () => {
             <motion.section
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              className="relative h-[40vh] bg-gradient-to-r from-indigo-600 to-blue-600"
+              className="relative h-[60vh] bg-gradient-to-r from-indigo-600 to-blue-600"
             >
               <div className="h-full flex items-center justify-center">
                 <div className="text-center text-white px-4">

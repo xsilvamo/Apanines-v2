@@ -14,8 +14,8 @@ const Mission = () => {
 
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-white p-8 rounded-lg shadow-sm text-center">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Target className="w-8 h-8 text-blue-600" />
+            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Target className="w-8 h-8 text-verde" />
             </div>
             <h3 className="text-xl font-semibold mb-4">Propósito</h3>
             <p className="text-gray-600">
@@ -24,8 +24,8 @@ const Mission = () => {
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-sm text-center">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Heart className="w-8 h-8 text-blue-600" />
+            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Heart className="w-8 h-8 text-verde" />
             </div>
             <h3 className="text-xl font-semibold mb-4">Misión</h3>
             <p className="text-gray-600">
@@ -34,8 +34,8 @@ const Mission = () => {
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-sm text-center">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Users className="w-8 h-8 text-blue-600" />
+            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Users className="w-8 h-8 text-verde" />
             </div>
             <h3 className="text-xl font-semibold mb-4">Meta</h3>
             <p className="text-gray-600">

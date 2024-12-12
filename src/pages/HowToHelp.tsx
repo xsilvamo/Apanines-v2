@@ -9,7 +9,7 @@ const HowToHelp = () => {
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="relative h-[60vh] bg-gradient-to-r from-green-600 to-blue-600"
+        className="relative h-[60vh] bg-gradient-to-r from-verde to-green-600"
       >
         <div className="h-full flex items-center justify-center">
           <div className="text-center text-white px-4">
@@ -68,15 +68,15 @@ const HowToHelp = () => {
                 whileHover={{ y: -10 }}
                 className="bg-white p-6 rounded-lg shadow-lg text-center"
               >
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <item.icon className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <item.icon className="w-8 h-8 text-verde" />
                 </div>
                 <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
                 <p className="text-gray-600">{item.description}</p>
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="mt-6 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors"
+                  className="mt-6 bg-verde text-white px-6 py-2 rounded-full hover:bg-green-700 transition-colors"
                 >
                   Más Información
                 </motion.button>
@@ -103,7 +103,7 @@ const HowToHelp = () => {
                     key={index}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="py-3 px-6 border-2 border-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition-colors"
+                    className="py-3 px-6 border-2 border-verde rounded-full hover:bg-blue-600 hover:text-white transition-colors"
                   >
                     {amount}
                   </motion.button>
@@ -112,7 +112,7 @@ const HowToHelp = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-full bg-blue-600 text-white px-8 py-3 rounded-full text-lg hover:bg-blue-700 transition-colors"
+                className="w-full bg-verde text-white px-8 py-3 rounded-full text-lg hover:bg-green-700 transition-colors"
               >
                 Donar Ahora
               </motion.button>
@@ -155,7 +155,7 @@ const HowToHelp = () => {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="mt-4 text-blue-600 hover:text-blue-800 transition-colors"
+                  className="mt-4 text-verde hover:text-green-800 transition-colors"
                 >
                   Saber más →
                 </motion.button>

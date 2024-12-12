@@ -75,7 +75,7 @@ const Navbar = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors"
+              className="bg-verde text-white px-6 py-2 rounded-full hover:bg-green-700 transition-colors"
             >
               Donar
             </motion.button>
@@ -98,23 +98,6 @@ const Navbar = () => {
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden bg-white border-t mt-2"
           >
-            <div className="px-6 py-4 space-y-4">
-              {navItems.map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className={`block text-gray-700 hover:text-blue-600 transition-colors ${
-                    location.pathname === item.path ? 'text-blue-600 font-semibold' : ''
-                  }`}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {item.text}
-                </Link>
-              ))}
-              <button className="w-full bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">
-                Donar
-              </button>
-            </div>
           </motion.div>
         )}
       </AnimatePresence>
