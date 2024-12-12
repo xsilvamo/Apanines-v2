@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Mission from "./Mission";
 import Testimonials from "./Testimonials";
+import Public from "../../assets/IMG-20241115-WA0008.jpg"; // Importa la imagen correctamente
 
 const fadeInUp = {
   initial: { y: 20, opacity: 0 },
@@ -48,7 +49,7 @@ const MainContent = () => {
               transition={{ duration: 0.3 }}
             >
               <img
-                src="Public\IMG-20241115-WA0008.jpg"
+                src={Public} // Usa la imagen importada
                 alt="Niños jugando"
                 className=" object-cover"
               />
