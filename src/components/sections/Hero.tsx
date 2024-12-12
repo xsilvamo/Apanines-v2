@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import image1 from "../../assets/IMG-20241115-WA0014.jpg"; // Importa la imagen correctamente
-import image2 from "../../assets/IMG-20241115-WA0017.jpg"; // Importa la imagen correctamente
+import image2 from "../../assets/IMG-20241115-WA0017.jpg";
+import image3 from "../../assets/apanines1.jpg" // Importa la imagen correctamente
 
-const images = [image1, image2];
+const images = [image1, image2, image3];
 
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
