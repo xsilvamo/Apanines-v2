@@ -35,7 +35,7 @@ const MainContent = () => {
                 personalizado marca la diferencia en la vida de las familias.
               </p>
               <motion.button
-                className="bg-celeste text-white px-8 py-3 rounded-full text-lg hover:bg-azul transition-colors"
+                className="bg-verde text-white px-8 py-3 rounded-full text-lg hover:bg-green-700 transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -61,7 +61,7 @@ const MainContent = () => {
 
       {/* Counter Section */}
       <motion.section
-        className="py-20 bg-celeste text-white"
+        className="py-20 bg-verde text-white"
         variants={fadeInUp}
         initial="initial"
         whileInView="whileInView"

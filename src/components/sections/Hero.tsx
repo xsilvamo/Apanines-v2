@@ -59,7 +59,7 @@ const Hero = () => {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-celeste text-white px-8 py-3 rounded-full text-lg hover:bg-verde transition-colors"
+                  className="bg-verde text-white px-8 py-3 rounded-full text-lg hover:bg-green-700 transition-colors"
                 >
                   Conoce Más
                 </motion.button>

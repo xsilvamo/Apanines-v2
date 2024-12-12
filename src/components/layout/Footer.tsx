@@ -77,7 +77,7 @@ const Footer = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-full bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition-colors"
+                className="w-full bg-verde text-white px-6 py-2 rounded hover:bg-green-700 transition-colors"
               >
                 Suscribirse
               </motion.button>
