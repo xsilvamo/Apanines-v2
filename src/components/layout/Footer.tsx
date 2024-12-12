@@ -1,5 +1,5 @@
 import React from 'react';
-import { Twitter, Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import { Youtube, Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
 import logo from '../../assets/images/logoapanines.svg';
 
@@ -19,10 +19,18 @@ const Footer = () => {
               Transformando vidas a través del apoyo integral y el amor incondicional.
             </p>
             <div className="flex space-x-4">
-              {[Twitter, Facebook, Instagram].map((Icon, index) => (
+              {[Youtube, Facebook, Instagram].map((Icon, index) => (
                 <motion.a
                   key={index}
-                  href="#"
+                  href={
+                  Icon === Instagram
+                    ? "https://www.instagram.com/apanines?igsh=c29rOTNuM2R3a2pw"
+                  : Icon === Facebook
+                    ? "https://www.facebook.com/share/1MUBP2s23c/"
+                  : Icon === Youtube
+                    ? "https://youtube.com/@fundacionapanines8805?si=omtM-UR20ogAhkh6"
+                    : `#`
+                                    }
                   whileHover={{ y: -2, color: '#60A5FA' }}
                   className="text-gray-400 hover:text-blue-400 transition-colors"
                 >

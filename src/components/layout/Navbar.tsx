@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Twitter, Facebook, Instagram, Menu, X } from 'lucide-react';
+import { Twitter, Facebook, Instagram, Menu, X, Youtube } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import logo from '../../assets/images/logoapanines.svg';
 
@@ -61,10 +61,18 @@ const Navbar = () => {
 
           <div className="hidden md:flex items-center space-x-6">
             <div className="flex space-x-4">
-              {[Twitter, Facebook, Instagram].map((Icon, index) => (
+              {[Youtube, Facebook, Instagram].map((Icon, index) => (
                 <motion.a
                   key={index}
-                  href="#"
+                  href={
+                    Icon === Instagram
+                      ? "https://www.instagram.com/apanines?igsh=c29rOTNuM2R3a2pw"
+                    : Icon === Facebook
+                      ? "https://www.facebook.com/share/1MUBP2s23c/"
+                    : Icon === Youtube
+                      ? "https://youtube.com/@fundacionapanines8805?si=omtM-UR20ogAhkh6"
+                      : `#`
+                  }
                   whileHover={{ y: -2, color: '#2563eb' }}
                   className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
