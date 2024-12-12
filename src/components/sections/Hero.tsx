@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import image1 from "../../assets/IMG-20241115-WA0014.jpg"; // Importa la imagen correctamente
+import image2 from "../../assets/IMG-20241115-WA0017.jpg"; // Importa la imagen correctamente
 
-const images = [
-  "./Public/IMG-20241115-WA0014.jpg",
-  "./Public/IMG-20241115-WA0017.jpg",
-];
+const images = [image1, image2];
 
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
