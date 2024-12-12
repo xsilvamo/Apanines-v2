@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Twitter, Facebook, Instagram, Menu, X, Youtube } from 'lucide-react';
+import { Facebook, Instagram, Menu, X, Youtube } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import logo from '../../assets/images/logoapanines.svg';
 
@@ -80,6 +80,7 @@ const Navbar = () => {
                 </motion.a>
               ))}
             </div>
+            <a href="/como-ayudar#donacion">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -87,6 +88,7 @@ const Navbar = () => {
             >
               Donar
             </motion.button>
+            </a>
           </div>
 
           <button 
