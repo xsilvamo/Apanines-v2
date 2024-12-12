@@ -42,7 +42,7 @@ const WhatWeDo = () => {
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="relative h-[60vh] bg-gradient-to-r from-verde to-celeste"
+        className="relative h-[60vh] bg-gradient-to-r from-amarillo to-orange-400"
       >
         <div className="h-full flex items-center justify-center">
           <div className="text-center text-white px-4">
