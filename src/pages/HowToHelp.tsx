@@ -97,25 +97,14 @@ const HowToHelp = () => {
           >
             <h2 className="text-3xl font-bold mb-8">Haz tu Donación</h2>
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <div className="grid md:grid-cols-3 gap-4 mb-8">
-                {['$10', '$25', '$50', '$100', '$250', 'Otro'].map((amount, index) => (
-                  <motion.button
-                    key={index}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="py-3 px-6 border-2 border-verde rounded-full hover:bg-green-600 hover:text-white transition-colors"
-                  >
-                    {amount}
-                  </motion.button>
-                ))}
-              </div>
-              <motion.button
+                <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="w-full bg-verde text-white px-8 py-3 rounded-full text-lg hover:bg-green-700 transition-colors"
-              >
+                onClick={() => window.location.href = 'https://www.flow.cl/app/web/pagarBtnPago.php?token=0d47ixi&fbclid=IwY2xjawG9YxhleHRuA2FlbQIxMAABHRmsDnV-WzT2cmA0D4qsN6PYWqlyvClTiiyfJidMntMhRBDt1kenbWX_mg_aem_IXHzzLR2h_vv4SfvC8ziwg'}
+                >
                 Donar Ahora
-              </motion.button>
+                </motion.button>
             </div>
           </motion.div>
         </div>
