@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Mission from "./Mission";
 import Testimonials from "./Testimonials";
-import Public from "../../assets/IMG-20241115-WA0008.jpg"; // Importa la imagen correctamente
+import Public from "../../assets/imagen20.jpg";
 
 const fadeInUp = {
   initial: { y: 20, opacity: 0 },
@@ -35,13 +35,14 @@ const MainContent = () => {
                 alcanzar su máximo potencial. Nuestro enfoque integral y
                 personalizado marca la diferencia en la vida de las familias.
               </p>
-              <motion.button
+                <motion.button
                 className="bg-verde text-white px-8 py-3 rounded-full text-lg hover:bg-green-700 transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-              >
+                onClick={() => window.location.href = '/nuestra-causa'}
+                >
                 Leer más
-              </motion.button>
+                </motion.button>
             </div>
             <motion.div
               className="relative h-[400px] rounded-lg overflow-hidden"
