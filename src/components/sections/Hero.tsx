@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import image1 from "../../assets/IMG-20241115-WA0014.jpg"; // Importa la imagen correctamente
-import image2 from "../../assets/IMG-20241115-WA0017.jpg";
+import image1 from "../../assets/imagen24.jpg"; // Importa la imagen correctamente
+import image2 from "../../assets/imagen22.jpg";
 import image3 from "../../assets/apanines1.jpg" // Importa la imagen correctamente
 
 const images = [image1, image2, image3];
@@ -60,6 +60,7 @@ const Hero = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-verde text-white px-8 py-3 rounded-full text-lg hover:bg-green-700 transition-colors"
+                  onClick={() => window.location.href = "/que-hacemos"}
                 >
                   Conoce Más
                 </motion.button>

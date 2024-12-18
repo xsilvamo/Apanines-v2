@@ -1,4 +1,7 @@
 import { NewsItem } from '../types/news';
+import image1 from '../assets/imagen6.jpg';
+import image2 from '../assets/imagen25.jpg';
+import image3 from '../assets/imagen10.jpg';
 
 // Simulating a backend service with localStorage
 const STORAGE_KEY = 'apanines_news';
@@ -20,7 +23,7 @@ const defaultNews: NewsItem[] = [
     La inversión en esta nueva sala representa nuestro compromiso continuo con la calidad 
     de atención y el desarrollo integral de nuestros niños.`,
     date: '2024-03-15',
-    image: 'https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&q=80',
+    image: image1,
     author: 'María Rodríguez'
   },
   {
@@ -38,7 +41,7 @@ const defaultNews: NewsItem[] = [
     
     Las inscripciones están abiertas para todas las familias de Apanines.`,
     date: '2024-03-10',
-    image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80',
+    image: image2,
     author: 'Juan Pérez'
   },
   {
@@ -56,7 +59,7 @@ const defaultNews: NewsItem[] = [
     
     Esta alianza nos permitirá expandir nuestros servicios y mejorar la calidad de atención.`,
     date: '2024-03-05',
-    image: 'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&q=80',
+    image: image3,
     author: 'Ana Martínez'
   }
 ];

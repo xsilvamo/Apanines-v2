@@ -43,12 +43,18 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Enlaces Rápidos</h3>
             <ul className="space-y-4">
-              {['Nuestra Causa', 'Qué Hacemos', 'Cómo Ayudar', 'Noticias', 'Galería'].map((item) => (
-                <motion.li key={item} whileHover={{ x: 2 }}>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                    {item}
-                  </a>
-                </motion.li>
+              {[
+              { name: 'Nuestra Causa', link: '/nuestra-causa' },
+              { name: 'Qué Hacemos', link: '/que-hacemos' },
+              { name: 'Cómo Ayudar', link: '/como-ayudar' },
+              { name: 'Noticias', link: '/noticias' },
+              { name: 'Galería', link: '/galeria' }
+              ].map((item) => (
+              <motion.li key={item.name} whileHover={{ x: 2 }}>
+                <a href={item.link} className="text-gray-400 hover:text-white transition-colors">
+                {item.name}
+                </a>
+              </motion.li>
               ))}
             </ul>
           </div>
@@ -66,7 +72,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-3 text-gray-400">
                 <MapPin className="w-5 h-5" />
-                <span>Calle Principal #123, Ciudad</span>
+                <span>Valdés 880, Melipilla</span>
               </li>
             </ul>
           </div>
