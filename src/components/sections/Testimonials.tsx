@@ -1,21 +1,24 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import image4 from '../../assets/imagen15.jpg';
+import image5 from '../../assets/imagen16.jpg';
+import image6 from '../../assets/imagen17.jpg'; 
 
 const testimonials = [
   {
     name: "María González",
     text: "Apanines cambió nuestras vidas. El apoyo y dedicación que recibimos es invaluable.",
-    image: "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&q=80"
+    image: image4
   },
   {
     name: "Juan Pérez",
     text: "Encontramos una segunda familia aquí. Las terapias han ayudado enormemente a nuestro hijo.",
-    image: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&q=80"
+    image: image5
   },
   {
     name: "Ana Martínez",
     text: "La dedicación y profesionalismo del equipo es excepcional. Estamos muy agradecidos.",
-    image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80"
+    image: image6
   }
 ];
 
