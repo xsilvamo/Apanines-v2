@@ -1,7 +1,7 @@
 import React from 'react';
 import { Youtube, Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
-import logo from '../../assets/images/logoapanines.svg';
+import logo from '../../assets/images/apanines_black.svg';
 
 const Footer = () => {
   return (

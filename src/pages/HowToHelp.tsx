@@ -77,6 +77,7 @@ const HowToHelp = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="mt-6 bg-verde text-white px-6 py-2 rounded-full hover:bg-green-700 transition-colors"
+                  onClick={() => window.location.href = '/pronto'}
                 >
                   Más Información
                 </motion.button>
@@ -145,6 +146,7 @@ const HowToHelp = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="mt-4 text-verde hover:text-green-800 transition-colors"
+                  onClick={() => window.location.href = '/pronto'}
                 >
                   Saber más →
                 </motion.button>

@@ -12,6 +12,7 @@ import AdminNews from "./pages/admin/AdminNews";
 import LoginForm from "./components/auth/LoginForm";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
 import { AuthProvider } from "./contexts/AuthContext";
+import UnderDevelopment from "./pages/UnderDevelopment";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
               <Route path="/como-ayudar" element={<HowToHelp />} />
               <Route path="/noticias/*" element={<News />} />
               <Route path="/galeria" element={<Gallery />} />
+              <Route path="/pronto" element={<UnderDevelopment />} />
               <Route path="/admin/login" element={<LoginForm />} />
               <Route
                 path="/admin/noticias"
