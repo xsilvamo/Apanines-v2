@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import NewsCard from '../components/news/NewsCard';
-import NewsDetail from '../components/news/NewsDetail';
-import { newsService } from '../services/newsService';
+import React, { useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
+import { motion } from "framer-motion";
+import NewsCard from "../components/news/NewsCard";
+import NewsDetail from "../components/news/NewsDetail";
+import { newsService } from "../services/newsService";
 
 const NewsPage: React.FC = () => {
   useEffect(() => {
