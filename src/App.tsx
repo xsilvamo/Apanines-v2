@@ -19,6 +19,7 @@ function App() {
     <AuthProvider>
       <Router>
         <div className="min-h-screen flex flex-col">
+          <div></div>
           <Navbar />
           <main className="flex-grow">
             <Routes>
